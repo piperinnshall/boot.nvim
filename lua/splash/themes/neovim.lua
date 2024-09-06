@@ -1,7 +1,7 @@
 return {
     {
         alignment = "center",
-        padding = 8,
+        padding = 10,
         color = 'cba6f7',
         ascii = {
             "     ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗    ",
@@ -14,9 +14,10 @@ return {
     },
     {
         alignment = "center",
-        padding = 1,
+        padding = 0,
+        color = 'fab387',
         ascii = {
-            "neovim"
+            ">> emacs"
         },
     },
 }

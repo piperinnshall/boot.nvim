@@ -32,17 +32,17 @@ local function align(content)
     return aligned_content
 end
 
----@param content splash.Opts.Theme.Content[]
+---@param content_arr splash.Opts.Theme.Content[]
 ---@return splash.Opts.Theme.Content[]
-function M.setup(content)
-    local aligned_content = {}
+function M.setup(content_arr)
+    local aligned_content_arr = {}
 
-    for _, item in ipairs(content) do
-        local aligned_item = align(item)
-        table.insert(aligned_content, aligned_item)
+    for _, content in ipairs(content_arr) do
+        local aligned_content = align(content)
+        table.insert(aligned_content_arr, aligned_content)
     end
 
-    return aligned_content
+    return aligned_content_arr
 end
 
 return M

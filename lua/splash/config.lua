@@ -30,11 +30,9 @@ M.opts = nil
 function M.setup(opts)
     M.opts = vim.tbl_deep_extend('force', {}, defaults, opts or {})
 
-    if not opts or not opts.theme.content then
-        local path = M.opts.directory .. '.' .. M.opts.theme.name
-        local theme_content = require(path) or {}
-        M.opts.theme.content = vim.tbl_deep_extend('force', M.opts.theme.content, theme_content)
-    end
+    local path = M.opts.directory .. '.' .. M.opts.theme.name
+    local theme_content = require(path) or {}
+    M.opts.theme.content = vim.tbl_deep_extend('force', M.opts.theme.content, theme_content)
 
 end
 

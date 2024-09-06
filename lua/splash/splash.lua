@@ -8,12 +8,12 @@ function M.setup()
     require'splash.window'.setup()
 
     ---@type splash.Opts.Theme.Content
-    local content = require'splash.config'.opts.theme.content
+    local content_arr = require'splash.config'.opts.theme.content
 
     ---@type splash.Opts.Theme.Content[]
-    local aligned_content = require'splash.align'.setup(content)
+    local aligned_content_arr = require'splash.align'.setup(content_arr)
 
-    require'splash.draw'.setup(aligned_content)
+    require'splash.draw'.setup(aligned_content_arr)
 end
 
 return M
