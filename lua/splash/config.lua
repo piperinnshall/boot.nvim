@@ -3,14 +3,39 @@ local M = {}
 
 ---@class splash.Opts
 local defaults = {
-    ---@type string
-    theme = 'neovim',
-    directory = nil, -- lua.startup.themes by default
+    directory = 'splash.themes',
+    theme = {
+        name = 'neovim',
+        ---@class splash.Opts.Theme.Content[]
+        content = {
+            ---@class splash.Opts.Theme.Content
+            ---@field alignment 'left' | 'right' | 'center'
+            ---@field padding number
+            ---@field color string
+            ---@field ascii string[]
+            {
+                alignment = 'left',
+                padding = 0,
+                color = 'ffffff',
+                ascii = {},
+            },
+        },
+    },
 }
 
----@param opts? splash.Opts  
+---@type splash.Opts
+M.opts = nil
+
+---@param opts splash.Opts
 function M.setup(opts)
-    if opts then
-        defaults = vim.tbl_deep_extend('force', defaults, opts)
+    M.opts = vim.tbl_deep_extend('force', {}, defaults, opts or {})
+
+    if not opts or not opts.theme.content then
+        local path = M.opts.directory .. '.' .. M.opts.theme.name
+        local theme_content = require(path) or {}
+        M.opts.theme.content = vim.tbl_deep_extend('force', M.opts.theme.content, theme_content)
     end
+
 end
+
+return M
