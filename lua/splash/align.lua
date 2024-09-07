@@ -7,12 +7,13 @@ local function align(content)
     local aligned_content = vim.deepcopy(content)
     aligned_content.ascii = {}
 
+    local vertical_padding = content.vertical_padding
     local ascii = content.ascii
     local alignment = content.alignment
-    local padding = content.padding
+
     local width = vim.api.nvim_win_get_width(0)
 
-    for _ = 1, padding do
+    for _ = 1, vertical_padding do
         table.insert(aligned_content.ascii, "")
     end
 

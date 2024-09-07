@@ -1,8 +1,5 @@
 return {
     {
-        alignment = "center",
-        padding = 10,
-        color = 'cba6f7',
         ascii = {
             "     ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗    ",
             "     ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║    ",
@@ -11,13 +8,16 @@ return {
             "     ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║    ",
             "     ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝    ",
         },
+        color = 'cba6f7',
+        alignment = "center",
+        vertical_padding = 10,
     },
     {
-        alignment = "center",
-        padding = 0,
-        color = 'fab387',
         ascii = {
-            ">> emacs"
+            ">> emacs",
         },
+        color = '4c4f69',
+        alignment = "center",
+        vertical_padding = 0,
     },
 }
