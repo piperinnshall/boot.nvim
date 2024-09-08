@@ -1,4 +1,4 @@
----@class splash.Window
+---@class boot.Window
 local M = {}
 
 function M.setup()

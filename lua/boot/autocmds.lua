@@ -2,6 +2,6 @@
 
 vim.api.nvim_create_autocmd('VimEnter', {
     callback = function()
-        require'splash.splash'.setup()
+        require'boot.trek'.setup()
     end,
 })

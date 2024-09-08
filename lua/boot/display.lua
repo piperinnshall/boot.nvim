@@ -1,8 +1,8 @@
----@class splash.Display
+---@class boot.Display
 local M = {}
 
 --- @param aligned_ascii string[]
---- @param aligned_content_arr splash.Opts.Theme.Content[]
+--- @param aligned_content_arr boot.Opts.Theme.Content[]
 local function display(aligned_ascii, aligned_content_arr)
     vim.api.nvim_buf_set_lines(0, 0, -1, false, aligned_ascii)
 
@@ -17,7 +17,7 @@ local function display(aligned_ascii, aligned_content_arr)
     end
 end
 
---- @param aligned_content_arr splash.Opts.Theme.Content[]
+--- @param aligned_content_arr boot.Opts.Theme.Content[]
 function M.setup(aligned_content_arr)
     local aligned_ascii = {}
 
