@@ -1,10 +1,13 @@
 # 🥾 boot.nvim
 A simple, fast, and customizable ***boot*** screen for [neovim](https://neovim.io/) 
 
+![boot.nvim](https://github.com/user-attachments/assets/9e08d750-1419-4248-8902-d6c41195c662)
+
 ## ✨ Features
 - Small and Fast
 - Fully Customizable
 - Easy to Use
+
 - Modular Themes
 
 ## 📦 Installation
@@ -65,12 +68,17 @@ require('boot').setup({
 currently there are two native themes:
 
 - neovim (default)
+- melody
 
 You can choose themes like this: 
 
 ```lua  
 require('boot').setup({ theme = { 'neovim' } }) 
 ```
+
+### neovim
+
+![neovim theme](https://github.com/user-attachments/assets/16ce5722-bd7e-4fc9-9e33-22441a60a8c1)
 
 ### Custom Theme Location
 
