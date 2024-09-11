@@ -1,10 +1,18 @@
 # 🥾 boot.nvim
-A simple, fast, and customizable ***boot*** screen for [neovim](https://neovim.io/) 
+
+A simple, fast, and customizable ***boot*** screen for [Neovim](https://neovim.io/) 
+
+![boot.nvim](https://github.com/user-attachments/assets/9e08d750-1419-4248-8902-d6c41195c662)
+
+**There is only one reason for why boot.nvim was created**
+
+It was made to prettify Neovim, by adding a boot screen when Neovim starts up. Compare to other startup plugins for Neovim, boot.nvim has very few features. Other startup plugins may include bookmarks or keybindings but boot.nvim has none, as the purpose for this plugin is strictly cosmetics. This makes for very little plugin overhead, while still making your Neovim just that little bit nicer.
 
 ## ✨ Features
 - Small and Fast
 - Fully Customizable
 - Easy to Use
+
 - Modular Themes
 
 ## 📦 Installation
@@ -65,12 +73,17 @@ require('boot').setup({
 currently there are two native themes:
 
 - neovim (default)
+- melody
 
 You can choose themes like this: 
 
 ```lua  
 require('boot').setup({ theme = { 'neovim' } }) 
 ```
+
+### neovim
+
+![neovim theme](https://github.com/user-attachments/assets/16ce5722-bd7e-4fc9-9e33-22441a60a8c1)
 
 ### Custom Theme Location
 
