@@ -1,7 +1,12 @@
 # 🥾 boot.nvim
+
 A simple, fast, and customizable ***boot*** screen for [Neovim](https://neovim.io/) 
 
 ![boot.nvim](https://github.com/user-attachments/assets/9e08d750-1419-4248-8902-d6c41195c662)
+
+**There is only one reason for why boot.nvim was created**
+
+It was made to prettify Neovim, by adding a boot screen when Neovim starts up. Compare to other startup plugins for Neovim, boot.nvim has very few features. Other startup plugins may include bookmarks or keybindings but boot.nvim has none, as the purpose for this plugin is strictly cosmetics. This makes for very little plugin overhead, while still making your Neovim just that little bit nicer.
 
 ## ✨ Features
 - Small and Fast
