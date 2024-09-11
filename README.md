@@ -1,5 +1,5 @@
 # 🥾 boot.nvim
-A simple, fast, and customizable ***boot*** screen for [neovim](https://neovim.io/) 
+A simple, fast, and customizable ***boot*** screen for [Neovim](https://neovim.io/) 
 
 ![boot.nvim](https://github.com/user-attachments/assets/9e08d750-1419-4248-8902-d6c41195c662)
 
